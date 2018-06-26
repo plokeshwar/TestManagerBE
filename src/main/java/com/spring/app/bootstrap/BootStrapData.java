@@ -7,11 +7,11 @@ import org.springframework.boot.CommandLineRunner;
 /**
  * Created by Plokeshwar on 6/26/2018.
  */
-public class BootstrapData implements CommandLineRunner{
+public class BootStrapData implements CommandLineRunner{
 
     private final CustomerRepository customerRepository;
 
-    public BootstrapData(CustomerRepository customerRepository){
+    public BootStrapData(CustomerRepository customerRepository){
         this.customerRepository = customerRepository;
     }
 

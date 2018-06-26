@@ -27,6 +27,11 @@ public class CustomerController {
         return customerService.findAllCustomers();
     }
 
+    @GetMapping("/{id}")
+    public Customer getCustomerByID(@PathVariable Long id){
+        return customerService.findCustomerByID(id);
+    }
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Customer saveCustomer(@RequestBody Customer customer){
